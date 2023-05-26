@@ -7,6 +7,7 @@ app.use(cors({
   credentials: true,
   origin: [
       'http://localhost:5173',
+      'http://localhost:3042',
       'https://ecdsa-node.saigontoken.com/'
   ]
 }
