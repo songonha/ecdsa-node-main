@@ -3,7 +3,14 @@ const app = express();
 const cors = require("cors");
 const port = 3042;
 
-app.use(cors());
+app.use(cors({
+  credentials: true,
+  origin: [
+      'http://localhost:5173',
+      'https://ecdsa-node.saigontoken.com/'
+  ]
+}
+));
 app.use(express.json());
 
 //private key 01: 923c89536469b00da37e538d821f8817447c4eced4949ef11a8486d9738dab9d
