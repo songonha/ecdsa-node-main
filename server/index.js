@@ -5,6 +5,7 @@ const port = 3042;
 
 app.use(cors({
   credentials: true,
+  enablePreflight: true,
   origin: [
       'http://localhost:5173',
       'http://localhost:3042',
