@@ -4,7 +4,7 @@ const cors = require("cors");
 const port = 3042;
 
 app.use(cors({
-  origin: [ 'https://ecdsa-node.saigontoken.com/' ]
+  origin: [ 'https://ecdsa.saigontoken.com/' ]
 }
 ));
 app.use(express.json());
