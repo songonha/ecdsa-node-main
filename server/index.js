@@ -4,16 +4,7 @@ const cors = require("cors");
 const port = 3042;
 
 app.use(cors({
-  credentials: true,
-  enablePreflight: true,
-  origin: [
-      'https://ecdsa-node.saigontoken.com/',
-      'http://localhost:5173',
-      'http://localhost:3042',
-      'http://localhost:3042/balance/0406b9b61e011d4546da45cda45c26f90b5ae95ec83e5eea530fea43ca7909e3af03044b814bc8964616464a7e48f916f705194814127c2b21b2bd1578446afbe5',
-      'http://localhost:3042/balance/041d07521bac3f95993a8426e58c0f1545811313a441b921327e8a299452b7baf47aeb5e5b3507ed4caf21c65c039f2a42a758cb6a2bf179e659db33bc32fe7772',
-      'http://localhost:3042/balance/0470ecc005832208927f86789a3315d6627a6cbf791d2f0027dbd24b757baa17ac53bad6ba1761bfe50822d0d68dccf7311e67e24bc2085962176fc2e707e1b11c',     
-  ]
+  origin: [ 'https://ecdsa-node.saigontoken.com/' ]
 }
 ));
 app.use(express.json());
